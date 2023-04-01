@@ -1,0 +1,42 @@
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "cover_img": "https://img.freepik.com/premium-vector/software-development-web-coding-laptop-programming-concept-website-design-coding-remote-work-home_3482-5615.jpg?size=626&ext=jpg&ga=GA1.2.1919658267.1680320112&semt=ais",
+    "profile_img": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.1.1919658267.1680320112&semt=sph",
+    "name": "Leanne Graham",
+    "read_time": "07",
+    "title": "Japan's government says it plans to put restrictions on some computer chip-making exports, following similar moves by the US and the Netherlands.",
+    "published_date": "12-05-1936"
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "cover_img": "https://img.freepik.com/free-vector/gradient-isometric-laptop-technology-background_52683-6158.jpg?size=626&ext=jpg&ga=GA1.2.1919658267.1680320112&semt=ais",
+    "profile_img": "https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&ext=jpg&ga=GA1.1.1919658267.1680320112&semt=sph",
+    "name": "Braik Graham",
+    "read_time": "12",
+    "title": "This year's Electronic Entertainment Expo, the annual video game showcase known as E3, has been cancelled.",
+    "published_date": "12-05-1956"
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "cover_img": "https://img.freepik.com/free-vector/gradient-top-view-laptop-background_52683-6291.jpg?size=626&ext=jpg&ga=GA1.2.1919658267.1680320112&semt=ais",
+    "profile_img": "https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg?size=626&ext=jpg&ga=GA1.1.1919658267.1680320112&semt=sph",
+    "name": "Leanne jurds",
+    "read_time": "15",
+    "title": "A bit like X-ray vision is how engineer James Long describes the effect of the technology he's working on.",
+    "published_date": "12-05-1986"
+  },
+  {
+    "userId": 1,
+    "id": 4,
+    "cover_img": "https://img.freepik.com/premium-photo/various-computer-equipment-with-programming-code-screens-table-dark-room-cyber-security-concept-copy-space_236854-23136.jpg?size=626&ext=jpg&ga=GA1.2.1919658267.1680320112&semt=ais",
+    "profile_img": "https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?size=626&ext=jpg&ga=GA1.1.1919658267.1680320112&semt=sph",
+    "name": "Aknupi nrse Graham",
+    "read_time": "06",
+    "title": "Governments and institutions around the world have been banning TikTok from officials' phones and devices, over the past few months.",
+    "published_date": "12-05-1996"
+  }
+]
