@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
-const Blog = ({ blog, handleWatchTime }) => {
+const Blog = ({ blog, handleWatchTime,handleBookMark }) => {
        
     const { id, name, cover_img, profile_img, published_date, read_time, title } = blog
     // console.log(handleWatchTime);
@@ -25,7 +25,7 @@ const Blog = ({ blog, handleWatchTime }) => {
                         </div>
                         <div className='flex items-center'>
                             <h3 >{read_time} min read</h3>
-                            <button onClick={() => handleWatchTime(read_time)} className='mx-4'><FontAwesomeIcon icon={faBookmark} /></button>
+                            <button onClick={()=>{handleBookMark(blog)}} className='mx-4'><FontAwesomeIcon icon={faBookmark} /></button>
 
                         </div>
                     </div>
@@ -35,7 +35,7 @@ const Blog = ({ blog, handleWatchTime }) => {
                 </div>
                 <div className="card-actions justify-start my-4">
 
-                    <button  >Mark as read</button>
+                    <button className='link' onClick={() => handleWatchTime(read_time)} >Mark as read</button>
                 </div>
             </div>
 

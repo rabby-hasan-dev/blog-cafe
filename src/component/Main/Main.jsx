@@ -7,7 +7,9 @@ import Blog from '../Blog/Blog';
 const Main = () => {
 
     const [blogs, setBlogs] = useState([])
-    const [watchTime,setWatchTime]=useState("");
+    const [watchTime, setWatchTime] = useState("");
+    const [bookMark, setBookMark] = useState([]);
+
 
     useEffect(() => {
         fetch(`blog.json`)
@@ -24,7 +26,7 @@ const Main = () => {
         if (previousWatchTime) {
             const sum = previousWatchTime + timeValue;
             localStorage.setItem('watchTime', sum);
-           
+
             setWatchTime(sum);
         }
         else {
@@ -33,21 +35,33 @@ const Main = () => {
         }
     }
 
+    const handleBookMark = (blog) => {
+        const newBookMark = [...bookMark, blog];
+        setBookMark(newBookMark);
+    }
+
 
     return (
-        <div className='flex justify-between' >
+        <div  >
 
-            <div className='blog-container w-9/12  p-4 '>
-                {blogs.map(blog => <Blog
-                    blog={blog}
-                    key={blog.id}
-                    handleWatchTime={handleWatchTime}
-                ></Blog>)}
-            </div>
 
-            <div className='Aside-container bg-black text-white w-1/4 p-4'>
-                <Aside watchTime={watchTime}></Aside>
-               
+            <div className='grid lg:grid-cols-2  gap-4'>
+                <div className='blog-container  w-full   '>
+                    {blogs.map(blog => <Blog
+                        blog={blog}
+                        key={blog.id}
+                        handleWatchTime={handleWatchTime}
+                        handleBookMark={handleBookMark}
+                    ></Blog>)}
+                </div>
+
+                <div className='Aside-container  '>
+                  
+                    <Aside watchTime={watchTime}
+                        bookMark={bookMark}
+                    ></Aside>
+
+                </div>
             </div>
 
         </div>
