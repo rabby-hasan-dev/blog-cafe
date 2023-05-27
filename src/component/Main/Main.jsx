@@ -3,12 +3,16 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import Aside from '../Aside/Aside';
 import Blog from '../Blog/Blog';
+import { toast } from 'react-toastify';
+import QA from '../../QA/QA';
 
 const Main = () => {
 
     const [blogs, setBlogs] = useState([])
     const [watchTime, setWatchTime] = useState("");
     const [bookMark, setBookMark] = useState([]);
+
+   
 
 
     useEffect(() => {
@@ -36,8 +40,15 @@ const Main = () => {
     }
 
     const handleBookMark = (blog) => {
+       
         const newBookMark = [...bookMark, blog];
         setBookMark(newBookMark);
+        toast('Successfully Bookmark ')
+
+      
+        
+        
+        
     }
 
 
@@ -48,6 +59,7 @@ const Main = () => {
             <div className='grid lg:grid-cols-2  gap-4'>
                 <div className='blog-container  w-full   '>
                     {blogs.map(blog => <Blog
+                    
                         blog={blog}
                         key={blog.id}
                         handleWatchTime={handleWatchTime}
@@ -63,6 +75,8 @@ const Main = () => {
 
                 </div>
             </div>
+
+            <QA ></QA>
 
         </div>
     );
